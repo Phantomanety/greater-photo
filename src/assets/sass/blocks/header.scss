@@ -1,0 +1,31 @@
+.header {
+    width: 100%;
+    position: absolute;
+    top: 42px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &__link {
+        font-family: $open-sans;
+        font-size: 16px;
+        font-weight: bold;
+        color: $white;
+        text-decoration: none;
+        letter-spacing: 0.04em;
+
+        &:nth-child(2) {
+            margin: 0 60px;
+        }
+
+        &:hover, &:active, &:visited {
+            color: $white;
+        }
+    }
+}

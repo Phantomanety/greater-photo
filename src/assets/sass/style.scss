@@ -1,0 +1,51 @@
+/* ===== Bootstrap ===== */
+@import '../../../node_modules/bootstrap/scss/bootstrap-reboot.scss';
+@import "../../../node_modules/bootstrap/scss/bootstrap-utilities.scss";
+@import "../../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import '../../../node_modules/slick-carousel/slick/slick.scss';
+@import '../../../node_modules/slick-carousel/slick/slick-theme.scss';
+
+/* ===== Template vars ===== */
+@import "vars";
+
+/* ===== Fonts ===== */
+@import "fonts";
+
+/* ===== SCSS Sections ===== */
+@import "blocks/hero";
+
+
+/* ===== SCSS Blocks ===== */
+@import "./blocks/header.scss";
+@import "./blocks/buttons.scss";
+
+[hidden] {
+    display: none;
+}
+
+:root {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    min-height: 100vh;
+    color: $body;
+}
+
+.test {
+    color: black;
+}
+.section__heading {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.2px;
+    color: $body;
+}

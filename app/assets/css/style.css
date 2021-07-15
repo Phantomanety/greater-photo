@@ -11766,9 +11766,23 @@ progress {
     overflow: hidden;
 }
 
+.hero:before {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
 .hero__slider {
     width: 100%;
     height: 100%;
+    margin-bottom: 0 !important;
 }
 
 .hero__slider-item {
@@ -11822,6 +11836,87 @@ progress {
     letter-spacing: 0.02em;
 }
 
+.hero__slider-nav {
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    right: 0;
+}
+
+.hero__slider-nav-mark {
+    font-family: "Bebas Neue Book", sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    padding: 16px 19px;
+    border-radius: 50%;
+}
+
+.hero__slider-nav-link {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.hero__slider-nav-link:active, .hero__slider-nav-link:hover {
+    color: #f5ba4c;
+}
+
+.hero__slider-nav-body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.hero__slider-nav-dots {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+}
+
+.hero__slider-nav .slick-dots {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+}
+
+.hero__slider-nav .slick-dots li {
+    width: 33.333%;
+    margin: 0;
+    height: 3px;
+}
+
+.hero__slider-nav .slick-dots li button {
+    padding: 0;
+    height: 100%;
+}
+
+.hero__slider-nav .slick-dots li button:before {
+    content: '';
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 100%;
+    height: 3px;
+}
+
+.hero__slider-nav-dots li.slick-active button:before {
+    background-color: #f5ba4c;
+    opacity: 1;
+    height: 3px;
+}
+
 /* ===== SCSS Blocks ===== */
 .header {
     width: 100%;
@@ -11851,14 +11946,17 @@ progress {
     color: #FFFFFF;
     text-decoration: none;
     letter-spacing: 0.04em;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
 }
 
 .nav__link:nth-child(2) {
     margin: 0 60px;
 }
 
-.nav__link:hover, .nav__link:active, .nav__link:visited {
-    color: #FFFFFF;
+.nav__link:hover, .nav__link:active {
+    color: #f5ba4c;
 }
 
 .btn {
@@ -11870,6 +11968,9 @@ progress {
     padding: 11px 35px 13px;
     border: 1px solid rgba(250, 250, 250, 0.5);
     border-radius: 25px;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
 }
 
 .btn-login a {
@@ -11879,6 +11980,14 @@ progress {
     color: #FFFFFF;
     text-decoration: none;
     letter-spacing: 0.04em;
+}
+
+.btn-login:hover {
+    border-color: #f5ba4c;
+}
+
+.btn-login:hover a {
+    color: #f5ba4c;
 }
 
 [hidden] {

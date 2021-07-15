@@ -1,14 +1,23 @@
 //= ../../../node_modules/jquery/dist/jquery.js
 //= ../../../node_modules/slick-carousel/slick/slick.js
 
-$(document).ready(function(){
-    $('.hero__slider').slick({
-        dots: true,
-        infinite: true,
-        fade: true,
-        cssEase: 'linear',
-        appendDots: $('.hero__slider-nav')
-    });
+
+
+var $slideshow = $('.hero__slider').slick({
+    dots: true,
+    infinite: true,
+    fade: true,
+    cssEase: 'linear',
+    appendDots: $('.hero__slider-nav-dots')
+});
+
+$('.hero__slider-nav').on('click', 'a', function( e ) {
+
+    var slideIndex = $(this).closest('a').data("index");
+
+    $slideshow.slick( 'slickGoTo', parseInt( slideIndex ) );
+
+    e.preventDefault();
 });
 
 /*const slideout = new Slideout({

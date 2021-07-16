@@ -12154,9 +12154,14 @@ var $slideshow = $('.hero__slider').slick({
   cssEase: 'linear',
   appendDots: $('.hero__slider-nav-dots')
 });
-$('.hero__slider-nav').on('click', 'a', function (e) {
-  var slideIndex = $(this).closest('a').data("index");
+$('.hero__slider-nav-block').on('click', 'a', function (e) {
+  var slideIndex = $(this).data("index");
   $slideshow.slick('slickGoTo', parseInt(slideIndex));
+  e.preventDefault();
+});
+$('.hero__slider-nav-block').on('click', 'span', function (e) {
+  var slideIndex = $(this).text();
+  $slideshow.slick('slickGoTo', parseInt(slideIndex) - 1);
   e.preventDefault();
 });
 /*const slideout = new Slideout({

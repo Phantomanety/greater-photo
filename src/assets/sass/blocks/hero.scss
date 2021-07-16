@@ -1,9 +1,7 @@
 .hero {
-    display: flex;
-    align-items: center;
     font-family: 'Open Sans', sans-serif;
     position: relative;
-    height: 100vh;
+    max-height: 887px;
     overflow: hidden;
 
     &:before {

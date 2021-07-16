@@ -3,6 +3,7 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap-utilities.scss";
 @import "../../../node_modules/bootstrap/scss/bootstrap-grid.scss";
 
+/* ===== Slick ===== */
 @import '../../../node_modules/slick-carousel/slick/slick.scss';
 @import '../../../node_modules/slick-carousel/slick/slick-theme.scss';
 
@@ -15,6 +16,7 @@
 /* ===== SCSS Sections ===== */
 @import "blocks/hero";
 @import "blocks/skills";
+@import "blocks/top";
 
 /* ===== SCSS Blocks ===== */
 @import "./blocks/header.scss";
@@ -30,8 +32,7 @@
 }
 
 html {
-    position: relative;
-    height: 100%;
+
 }
 
 body {
@@ -40,12 +41,23 @@ body {
     font-weight: 400;
     font-style: normal;
     position: relative;
-    min-height: 100vh;
+    height: 100%;
     background-color: $body;
 }
 
 h1, p {
   margin: 0;
+}
+
+.section__heading {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
 }
 
 .section__sup {

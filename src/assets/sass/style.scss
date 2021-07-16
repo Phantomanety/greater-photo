@@ -14,11 +14,12 @@
 
 /* ===== SCSS Sections ===== */
 @import "blocks/hero";
-
+@import "blocks/skills";
 
 /* ===== SCSS Blocks ===== */
 @import "./blocks/header.scss";
 @import "./blocks/buttons.scss";
+
 
 [hidden] {
     display: none;
@@ -28,25 +29,59 @@
     font-size: 16px;
 }
 
+html {
+    position: relative;
+    height: 100%;
+}
+
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $open-sans;
     font-size: 1rem;
     font-weight: 400;
     font-style: normal;
     position: relative;
     min-height: 100vh;
-    color: $body;
+    background-color: $body;
 }
 
-.test {
-    color: black;
+h1, p {
+  margin: 0;
 }
-.section__heading {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 32px;
+
+.section__sup {
+    font-family: $bebas-neue-book;
+    font-weight: 300;
+    color: $white;
+    font-size: 18px;
+    letter-spacing: .26em;
+    text-transform: uppercase;
+    top: 0;
+    line-height: 1;
+}
+
+.section__title {
+    font-family: $greta-display;
+    font-size: 48px;
     font-style: normal;
-    font-weight: 700;
-    line-height: 40px;
-    letter-spacing: 0.2px;
-    color: $body;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0.02em;
+    color: $white;
+    margin-top: 15px;
+}
+
+.arrow-icon {
+    height: 15px;
+    width: 15px;
+    fill: $white;
+    padding-left: 2px;
+}
+
+.divider {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #434343;
+    display: block;
+
 }

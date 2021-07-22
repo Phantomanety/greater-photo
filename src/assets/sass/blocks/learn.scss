@@ -1,0 +1,86 @@
+.learn {
+  position: relative;
+  &-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    object-fit: cover;
+  }
+
+  &__content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 100px 0;
+
+    &-sup {
+      font-family: $bebas-neue;
+      font-weight: normal;
+      color: $white;
+      font-size: 20px;
+      letter-spacing: .26em;
+      margin-bottom: 40px;
+    }
+
+    &-title {
+      font-family: $greta-display;
+      font-weight: 500;
+      color: $white;
+      font-size: 83px;
+      letter-spacing: .02em;
+    }
+    &-desc {
+      font-family: $open-sans;
+      font-weight: 400;
+      color: $white;
+      font-size: 24px;
+      opacity: .6;
+      margin-bottom: 25px;
+
+      & span {
+        font-weight: 600;
+      }
+    }
+
+    &-advantages {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 60px;
+
+      &-advantage {
+        text-align: center;
+
+        &:nth-child(2) {
+          margin: 0 100px;
+        }
+
+        &-value {
+          font-family: $bebas-neue;
+          font-weight: 700;
+          color: $white;
+          font-size: 40px;
+          letter-spacing: .2em;
+        }
+
+        &-desc {
+          font-family: $bebas-neue;
+          font-weight: 400;
+          color: $white;
+          font-size: 20px;
+          letter-spacing: .2em;
+          opacity: .6;
+        }
+      }
+    }
+  }
+}

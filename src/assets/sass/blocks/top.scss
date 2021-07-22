@@ -1,20 +1,24 @@
 .top {
+  padding-top: 60px;
   &__items {
-    position: relative;
     margin-bottom: 60px;
-
     &-item {
-      position: relative;
       width: 100%;
       height: 100%;
-
       &-image {
         position: relative;
+        overflow: hidden;
+        &:hover {
+          .top__items-item-image-bg {
+            transform: scale(1.03);
+          }
+        }
 
         &-bg {
           width: 100%;
           height: 100%;
           object-fit: cover;
+          transition: transform .5s linear;
         }
 
         &-person {
@@ -56,6 +60,11 @@
           border-radius: 25px;
           line-height: 10px;
           margin: 10px 5px 0;
+          transition: all .1s linear;
+
+          &:hover {
+            color: $orange;
+          }
         }
 
         &-info {

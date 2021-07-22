@@ -5,6 +5,7 @@
 
 var $slideshow = $('.hero__slider').slick({
     dots: true,
+    arrows: false,
     infinite: true,
     fade: true,
     cssEase: 'linear',

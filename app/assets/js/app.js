@@ -12149,6 +12149,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
 var $slideshow = $('.hero__slider').slick({
   dots: true,
+  arrows: false,
   infinite: true,
   fade: true,
   cssEase: 'linear',

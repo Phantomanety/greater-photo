@@ -1,0 +1,62 @@
+.footer {
+  padding-bottom: 80px;
+  &__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+
+    &-link {
+      font-family: $open-sans;
+      font-weight: 700;
+      font-size: 16px;
+      margin: 0 30px;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+
+    }
+  }
+  &__social {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    height: 48px;
+    margin: 80px 0 60px;
+
+    &-logo {
+      position: absolute;
+      left: 0;
+    }
+
+    &-icons {
+      display: flex;
+      align-items: center;
+
+      & a {
+        text-decoration: none;
+        padding: 0 20px;
+
+        &:hover svg {
+          fill: $orange;
+        }
+      }
+
+      & svg {
+        height: 30px;
+        width: 30px;
+        fill: #6a6a6a;
+      }
+    }
+  }
+  &-copyright {
+    font-family: $open-sans;
+    color: #6a6a6a;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+  }
+}

@@ -18,6 +18,9 @@
 @import "blocks/skills";
 @import "blocks/top";
 @import "blocks/workshops";
+@import "blocks/students";
+@import "blocks/learn";
+@import "blocks/footer";
 
 /* ===== SCSS Blocks ===== */
 @import "./blocks/header.scss";
@@ -52,7 +55,6 @@ h1, p {
 
 .section__heading {
     text-align: center;
-    margin-top: 60px;
     margin-bottom: 50px;
     display: flex;
     flex-direction: column;
@@ -97,4 +99,21 @@ h1, p {
     width: 100%;
     background-color: #434343;
     display: block;
+    margin-top: 60px;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    transition: all .1s linear;
+
+    &:visited {
+        color: white;
+    }
+
+    &:hover {
+        color: $orange;
+    }
+
+
 }

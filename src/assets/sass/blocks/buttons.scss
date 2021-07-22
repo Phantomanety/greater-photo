@@ -44,4 +44,29 @@
       }
     }
   }
+
+  &-more{
+    padding: 20px 50px;
+    border: 1px solid $orange;
+    border-radius: 60px;
+    transition: all 0.1s linear;
+
+    a {
+      font-family: $open-sans;
+      font-size: 16px;
+      font-weight: bold;
+      color: $orange;
+      text-decoration: none;
+      letter-spacing: 0.04em;
+
+    }
+
+    &:hover {
+      border-color: $white;
+
+      a {
+        color: $white;
+      }
+    }
+  }
 }

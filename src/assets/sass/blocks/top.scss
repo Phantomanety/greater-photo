@@ -1,13 +1,17 @@
 .top {
   padding-top: 60px;
+
   &__items {
     margin-bottom: 60px;
+
     &-item {
       width: 100%;
       height: 100%;
+
       &-image {
         position: relative;
         overflow: hidden;
+
         &:hover {
           .top__items-item-image-bg {
             transform: scale(1.03);
